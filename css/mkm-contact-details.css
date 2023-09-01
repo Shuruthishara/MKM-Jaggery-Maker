@@ -1,0 +1,144 @@
+.contact {
+    width: 100%;
+    height: 600px;
+    padding: 3em;
+    color: white;
+    letter-spacing: 1px;
+    background-image: url("../images/red plant 3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.contact > div {
+    margin: auto;
+    width: 60%;
+    height: calc(80% - 6em);
+}
+.contact .part-1, .contact .part-2 {
+    width: 50%;
+    height: 420px;
+    margin: auto;
+    float: right;
+    padding: 5em 1em 5em 6em;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.contact .part-1 {
+    padding: 5em 3em 5em 1em;
+}
+.contact .part-1 > div {
+    padding: .9em 0em;
+    font-size: 1.2em;
+}
+.contact .part-1 > div a {
+    color: white;
+}
+.contact .part-1 > div.soc-media a {
+    margin-right: 1.5em;
+}
+.contact .part-1 span {
+    margin-right: 1em;
+}
+.contact .part-1 span i {
+    width: 1em;
+    font-size: 19px;
+}
+.contact .part-2 h3, .contact .part-1 h3 {
+    text-align: left;
+    margin-bottom: 1em;
+}
+.contact .part-2 > div p {
+    text-align: left;
+    line-height: 2.27em;
+}
+.contact .part-2 > div p a {
+    color: white;
+}
+.contact .copyright {
+    width: 100%;
+    height: 28%;
+    float: right;
+    margin-top: 0em;
+    padding: 0em 1em 1em 1em;
+    letter-spacing: normal;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.contact .copyright p {
+    opacity: .9;
+}
+.contact .copyright p,.contact .copyright p a {
+    font-size: 16px;
+    color: white;
+    word-spacing: .1em;
+}
+.contact .copyright p a:nth-child(2) {
+    color: #DEE262;
+}
+.contact .part-1 > div a:hover, .contact .part-2 > div p a:hover, .contact a:hover i, .contact .copyright p a:hover {
+    color: #DEE262;
+}
+
+/*Small screen*/
+@media (max-width: 576px) {
+    .contact {
+        height: 780px;
+        padding: 1em;
+    }
+    .contact > div {
+        width: 100%;
+    }
+    .contact .part-1, .contact .part-2 {
+        width: 100%;
+        height: 320px;
+        float: none;
+        padding: 2em 0em 1em 1.8em;
+    }
+    .contact .copyright {
+        width: 100%;
+        height: 110px;
+        float: none;
+        margin: auto;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 577px) and (max-width: 767px) {
+    .contact {
+        height: 780px;
+        padding: 2em;
+    }
+    .contact > div {
+        width: 100%;
+    }
+    .contact .part-1, .contact .part-2 {
+        width: 80%;
+        height: 320px;
+        float: none;
+        padding: 2em 0em 1em 1.8em;
+    }
+    .contact .copyright {
+        width: 80%;
+        height: 90px;
+        float: none;
+        margin: auto;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .contact {
+        padding: 2em;
+    }
+    .contact > div {
+        width: 100%;
+    }
+    .contact .part-1, .contact .part-2 {
+        width: 50%;
+    }
+    .contact .copyright {
+        width: 100%;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+}

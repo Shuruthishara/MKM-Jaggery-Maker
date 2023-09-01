@@ -1,0 +1,445 @@
+.jumbotron {
+    background-image: url("../images/contact 13.jpg");
+    background-position: top;
+}
+.jumbotron h1 {
+    color: white;
+    font-size: 2em;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 175px;
+    margin-left: 2em;
+}
+.strategy {
+    width: 100%;
+    height: 500px;
+    padding: 70px 150px 0;
+    overflow-x: hidden;
+}
+.strategy > div {
+    padding: 35px;
+    height: 18em;
+}
+.strategy > div > a > div {
+    width: 100%;
+    height: 100%;
+    background-color: #F68181;
+    transition: .5s;
+    padding: 2em;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.strategy > div > a > div:hover {
+    cursor: pointer;
+    background-color: #CC2B16;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.45);
+    transform: rotate(0deg) skew(0deg) scale(1.1);
+}
+.strategy img {
+    width: 3em;
+    margin-top: 0em;
+    margin-bottom: .4em;
+}
+.strategy p {
+    font-size: 1.1em;
+    transition: .5s;
+    color: white;
+}
+.strategy > div > div:hover p {
+    color: white;
+}
+.content {
+    width: 88%;
+    height: 1100px;
+    padding: .5em 5em 3em;
+    position: relative;
+    left: 0%;
+    /* overflow-x: hidden; */
+}
+.content h2, .strategy h2  {
+    left: 0;
+    margin: 1em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #CC2B16;
+}
+.content h2 {
+    left: 6%;
+    margin-bottom: 3em;
+}
+.form-area h2 {
+    margin: 1.5em;
+    margin-top: 0;
+    left: 3em;
+}
+.content .holder {
+    height: 760px;
+    padding: 6em 3em;
+    background-color: white;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.form-area {
+    height: 100%;
+    padding: 0em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto; 
+}
+.form-area form {
+    width: 100%;
+}
+form span {
+    margin: auto;
+    margin-right: 1em;
+    display: inline-block;
+    width: 7em;
+    padding: 1em;
+    font-size: 1.1em;
+}
+.form-area form div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    position: relative;
+    left: 0em;
+}
+.form-control {
+    width: 58%;
+    height: 5em;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1.45px solid rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: center;
+    transition: .5s;
+}
+.form-control:hover, .form-control:focus {
+    transition: .5s;
+    border: 1.45px solid red;
+    box-shadow: 0px 15px 35px -12px rgba(0, 0, 0, 0.25);
+}
+input {
+    margin: auto;
+    margin-left: 0;
+}
+.form-area textarea {
+    margin: auto;
+    margin-left: 0;
+    text-align: left;
+    padding: 1em;
+    overflow: hidden;
+    resize: none;
+}
+.submit {
+    position: relative;
+    left: 4em;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #CC2B16;
+    border-color: transparent;
+    letter-spacing: 1px;
+    min-height: 3.3em;
+    max-height: 3.3em;
+    margin: auto;
+    margin-top: 3em;
+    width: 8em;
+    min-width: 8em;
+    max-width: 8em;
+    padding: 1em 1.2em;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.submit:hover {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #F68181;
+    transform: rotate(0deg) skew(0deg) scale(1.1);
+}
+.address {
+    height: 100%;
+    transition: .5s;
+}
+.address > div {
+    width: 160%;
+    height: 99%;
+    position: relative;
+    left: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F68181;
+    transition: .5s;
+    box-shadow: 0px 15px 35px -12px rgba(0, 0, 0, 0.35);
+}
+.address > div > div {
+    width: 12em;
+    height: 12em;
+    padding: 1em;
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .5s;
+    transform: rotate(0deg) skew(0deg) scale(1.1);
+    box-shadow: 0px 15px 35px -12px rgba(0, 0, 0, 0.45);
+    /* box-shadow: 0px 15px 35px -12px rgba(0, 0, 0, 0.25); */
+}
+.address > div > div i {
+    margin-bottom: .8em;
+}
+/* .address > div > div:hover {
+    cursor: pointer;
+    /* transform: rotate(0deg) skew(0deg) scale(1.1);
+    box-shadow: 0px 15px 35px -12px rgba(0, 0, 0, 0.45);
+} */
+.address button {
+    border: none;
+    color: white;
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    padding: .5em;
+    background-color: transparent;
+    transition: .5s;
+    margin: .5em;
+}
+.address button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.address l {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: .9em;
+    font-weight: 800;
+    background-color: white;
+    color: #CC2B16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+.address l.sales {
+    margin-right: .5em;
+}
+.address l.enquiry {
+    margin-left: .5em;
+}
+.address button:hover l {
+    transform: rotate(360deg);
+}
+
+/*Small screen*/
+@media (max-width: 576px) {
+    .jumbotron h1 {
+        line-height: 1.5em;
+        margin: auto;
+        margin-left: .5em;
+    }
+    .content {
+        width: 100%;
+        height: 1200px;
+        padding: 0em;
+    }
+    .content h2 {
+        left: 0em;
+        margin-bottom: 2em;
+    }
+    .content .holder {
+        height: 770px;
+        padding: 5em 1em;
+    }
+    .strategy {
+        height: 1000px;
+        padding: 80px 30px 10px;
+    }
+    .strategy > div {
+        padding: 25px;
+    }
+    .form-area form div {
+        left: -1em;
+    }
+    form span {
+        margin-right: 0;
+    }
+    .form-control {
+        width: 60%;
+    }
+    .submit {
+        width: 5em;
+        left: 0;
+    }
+    .address {
+        height: 18em;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .address > div {
+        width: 18em;
+        height: 18em;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .address > div > div {
+        width: 9em;
+        height: 9em;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 577px) and (max-width: 767px) {
+    .content {
+        width: 100%;
+        height: 1300px;
+        padding: 1em 3.5em 3.5em;
+    }
+    .content h2 {
+        left: 0;
+        margin-bottom: 2em;
+    }
+    .content .holder {
+        height: 770px;
+        padding: 5em 1em;
+    }
+    .strategy {
+        height: 980px;
+        padding: 80px 150px 10px;
+    }
+    .strategy > div {
+        padding: 25px;
+    }
+    .form-area h2 {
+        left: 2.2em;
+    }
+    .form-area form div {
+        left: -1em;
+    }
+    .form-control {
+        width: 60%;
+    }
+    .submit {
+        width: 5em;
+        left: 0em;
+    } 
+    .address {
+        height: 20em;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .address > div {
+        width: 20em;
+        height: 20em;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .address > div > div {
+        width: 10em;
+        height: 10em;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .content {
+        width: 100%;
+        height: 1400px;
+        padding: 4em;
+        left: 0%;
+    }
+    .content .holder {
+        height: 790px;
+        padding: 5em 1em;
+    }
+    .content h2 {
+        left: 0;
+    }
+    .strategy {
+        height: 500px;
+        padding: 70px 20px 10px;
+    }
+    .strategy > div {
+        padding: 18px;
+        height: 16em;
+    }
+    .strategy > div > div {
+        padding: 2em 1em;
+    }
+    .strategy > div > a > div {
+        padding: 2em .5em;
+    }
+    .form-area h2 {
+        left: 2em;
+    }
+    .form-area form div {
+        left: -1em;
+    }
+    .form-control {
+        width: 55%;
+    }
+    .submit {
+        width: 5em;
+        left: 3em;
+        left: 0;
+    }
+    .address {
+        height: 20em;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .address > div {
+        width: 20em;
+        height: 20em;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .address > div > div {
+        width: 10em;
+        height: 10em;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+}

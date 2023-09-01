@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MKM - Contact Us!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+        <link rel="stylesheet" type="text/css" href="css/mkm-contact-us.css">
+        <link rel="stylesheet" type="text/css" href="css/mkm-common-styles.css">
+        <link rel="stylesheet" type="text/css" href="css/mkm-contact-details.css">
+        <link rel="stylesheet" type="text/css" href="css/mkm-navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/mkm-arrow-up.css">
+        <link rel="stylesheet" type="text/css" href="css/arrow-up-icon.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--right click-->
+        <script src="js/arrow-up-icon.js"></script>
+    </head>
+
+    <body>
+        <main>
+             <!--info-->
+             <div class="info">
+                <span class="desktop-view"><a href="mailto:mkmjaggery@yahoo.com" target="_blank"><i class="fas fa-envelope"></i>mkmjaggery@yahoo.com</a></span>
+                <span><a href="tel:+91 9962542432"><i class="fas fa-phone-alt"></i>+91 9962542432</span></a></span>
+            </div>
+
+            
+            <!--Navbar-->
+            <div class="navbar">
+                <a href="index.html"><img class="mkm-logo" src="images/final1.png"></a>
+
+                <div class="desktop-view">
+                    <ul>
+                        <a href="mkm-contact-us.html"><li style="color: #BA0F30;">Contact Us</li></a>
+                        <a href="mkm-about.html"><li>About</li></a>
+                        <a href="mkm-recipes.html"><li>Recipes</li></a>
+                        <a href="index.html"><li>Home</li></a>
+                    </ul>
+                </div><!--desktop-view-->
+
+                <div class="mobile-view">
+                    <button onclick="dropdown()" id="nav-btn" class="drop-btn"><i class="drop-btn fas fa-bars"></i></button>
+
+                    <div id="dropdown" class="dropdown-content">
+
+                        <ul>
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="mkm-recipes.html"><li>Recipes</li></a>
+                            <a href="mkm-about.html"><li>About</li></a>
+                            <a href="mkm-contact-us.html"><li style="color: #BA0F30;">Contact Us</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script src="js/mkm-navbar.js"></script>
+
+
+            <!--Jumbotron-->
+            <div class="jumbotron">
+                <div>
+                    <h1 data-aos="fade-down">Connect with us...</h1>
+                </div>
+            </div>
+
+
+            <!--strategy-->
+            <div class="strategy" id="branches">
+                <h2>Our Branches</h2>
+                <div class="grid-lg-4 grid-md-4 grid-sm-12 grid-xs-12" data-aos="fade-right"><a href="#"><div><img src="images/one.png"><p>Olathevarayanpettai, Perambur(PO), Thiruviyaru(TK), Thanjavur</p></div></div></a>
+                <div class="grid-lg-4 grid-md-4 grid-sm-12 grid-xs-12"><a href="#"><div><img src="images/two.png"><p>Olathevarayanpettai, Perambur(PO), Thiruviyaru(TK), Thanjavur</p></div></div></a>
+                <div class="grid-lg-4 grid-md-4 grid-sm-12 grid-xs-12" data-aos="fade-left"><a href="#"><div><img src="images/three.png"><p>Olathevarayanpettai, Perambur(PO), Thiruviyaru(TK), Thanjavur</p></div></div></a>
+            </div>
+
+
+            <!--Form-->
+            <div class="content">
+       
+                <h2>Contact Us</h2>
+                <div class="holder">
+                    <div class="grid-lg-8 grid-md-12 grid-sm-12 grid-xs-12 form-area" data-aos="fade-right">
+                        <h2>Enquiry</h2>
+                        <form class="form" method="POST" action="php/mkm-contact-form.php">
+                            <div>
+                                <span>Name</span>
+                                <input name="Name" id="Name" type="text" class="form-control"required><br>
+                            </div>
+    
+                            <div>
+                                <span>Email - ID</span>
+                                <input name="Email" id="Email" type="email" class="form-control" required><br>
+                            </div>
+    
+                            <div>
+                                <span>Mobile no.</span>
+                                <input name="Phonenumber" id="Phonenumber" type="tel" class="form-control" required><br>
+                            </div>
+    
+                            <div>
+                                <span>Message</span>
+                                <textarea name="Message" id="Message" class="form-control"></textarea><br>
+                            </div> 
+    
+                            <input type="submit" class="form-control submit" value="Send">
+                        </form>
+                    </div>
+
+                    <div class="grid-lg-4 grid-md-12 grid-sm-12 grid-xs-12 address">
+                        <div>
+                            <div><a href="mailto:mkmjaggery@yahoo.com" target="_blank"><button><!--<l class="sales">&#8594 </l> -->&#8594 Sales</button></a><a href="mailto:info@mkmjaggerymaker.com" target="_blank"><button>Enquiry &#8592<!--<l class="enquiry"> &#8592</l>--></button></a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--content end-->
+
+
+            <!--Contact Details-->
+            <div class="contact">
+                <div>
+                    <div class="part-2 mobile-view">
+                        <h3>Quick Go</h3>
+                        <div>
+                            <p>
+                                <a href="index.html">Home</a><br>
+                                <a href="mkm-about.html">About Us</a><br>
+                                <a href="index.html#product-section">Our products</a><br>
+                                <a href="mkm-recipes.html">Recipes</a><br>
+                                <a href="mkm-contact-us.html" style="color: #DEE262;">Contact Us</a>
+                            </p>
+                        </div>
+                    </div><!--part-2 end--> 
+
+                    <div class="part-1">
+                        <h3>Touch with Us</h3>
+                        <div class="grid-lg-12 grid-md-12 grid-sm-12 grid-xs-12"><a href="https://www.google.co.in/maps/place/MKM+Jaggery+Maker/@10.9141766,79.1386384,17z/data=!3m1!4b1!4m5!3m4!1s0x3baac5088a381d47:0x50d1e10a1139b377!8m2!3d10.9141713!4d79.1408271?hl=en&authuser=0" target="_blank"><span><i class="fas fa-map-marked-alt"></i></span>Head-office: Thanjavur</a></div>
+                        <div class="grid-lg-12 grid-md-12 grid-sm-12 grid-xs-12"><a href="tel:+91 9962542432"><span><i class="fas fa-mobile-alt"></i></span>+91 9962542432</a></div>
+                        <div class="grid-lg-12 grid-md-12 grid-sm-12 grid-xs-12"><a href="mailto:mkmjaggery@yahoo.com" target="_blank"><span><i class="fas fa-paper-plane"></i></span>mkmjaggery@yahoo.com</a></div>
+                        <div class="grid-lg-12 grid-md-12 grid-sm-12 grid-xs-12 soc-media">
+                            <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div><!--part-1 end-->
+    
+                    <div class="part-2 desktop-view">
+                        <h3>Quick Go</h3>
+                        <div>
+                            <p>
+                                <a href="index.html">Home</a><br>
+                                <a href="mkm-about.html">About Us</a><br>
+                                <a href="index.html#product-section">Our products</a><br>
+                                <a href="mkm-recipes.html">Recipes</a><br>
+                                <a href="mkm-contact-us.html" style="color: #DEE262;">Contact Us</a>
+                            </p>
+                        </div>
+                    </div><!--part-2 end--> 
+
+                    <div class="copyright">
+                        <p>&copy <a href="index.html">MKM 2020</a> - All rights reserved. 
+                            Designed and Developed by <a href="techfabs.in">Techfabs</a><br>
+                        </p>
+                    </div><!--copyright end-->
+                </div>
+                
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="js/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({ 
+                duration: 1900,
+            });
+        </script>
+
+        <script src="js/right-click.js"></script>
+
+    </body>
+</html>

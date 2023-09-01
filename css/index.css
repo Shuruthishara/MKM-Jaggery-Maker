@@ -1,0 +1,794 @@
+.jumbotron {
+    background-image: url("../images/theme 6.jpg");
+    background-position: center;
+}
+.jumbotron h1 {
+    color: white;
+    font-size: 2em;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 175px;
+    margin-left: 1.2em;
+}   
+.intro {
+    width: 100%;
+    height: 410px;
+    padding: 4em 4em 0;
+    overflow-x: hidden;
+}
+.intro h1, .products h2, .modal h2, .statics h2, .strategy h2 {
+    color: #CC2B16;
+    font-size: 1.5em;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    word-spacing: .25em;
+}
+.intro h1 {
+    font-style: normal;
+}
+.intro-para-1 {
+    font-family: 'Playball';
+    color: #CC2B16;
+    font-size: 1.3em !important;
+}
+.statics h2 {
+    margin-bottom: 2.8em;
+    font-style: normal;
+}
+.strategy h2 {
+    margin-bottom: 1.5em;
+    font-style: normal;
+}
+.statics {
+    width: 80%;
+    height: 500px;
+    padding: 2em;
+    margin: auto;
+}
+.statics > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.statics > div > span {
+    font-size: 1.3em;
+    text-align: center;
+}
+.statics a, .statics a:hover, .statics a:visited, .statics a:active {
+    color: black;
+}
+.statics .circle {
+    width: 130px;
+    height: 130px;
+    font-size: 2em;
+    margin: 1.3em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #86DDD4;
+    transition: .5s;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.statics .circle:hover {
+    transform: scale(1.1);
+}
+.modal h2 {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.products h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-style: normal;
+}
+.intro p {
+    width: 70%;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+.products {
+    width: 100%;
+    height: 930px;
+    padding: 0 9em;
+    overflow-x: hidden;
+}
+.products > div {
+    height: 400px;
+    padding: 40px;
+}
+.products > div > div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: .5s;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+.products > div > div > div {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: lighter;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+    position: relative;
+}
+.products > div > div:hover {
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.products p {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-family: 'Playball';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .5s;
+    position: absolute;
+}
+.product-1 p {
+    top: 100%;
+}
+.product-2 p {
+    left: -100%;
+}
+.product-4 p {
+    top: -100%;
+}
+.product-3 p {
+    left: 100%;
+}
+.product-1 > div > div:hover p, .product-4 > div > div:hover p {
+    top: 0%;
+}
+.product-2 > div > div:hover p, .product-3 > div > div:hover p {
+    left: 0%;
+}
+.products > div:hover span {
+    transition: 0.5s;
+    bottom: -60px;
+}
+.products > div > div > div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.product-1 > div > div {
+    background-image: url("../images/jaggery 5.jpg");
+    background-position: bottom;
+}
+.product-2 > div > div {
+    background-image: url("../images/jaggery 1.jpg");
+    background-position: center;
+}
+.product-3 > div > div {
+    background-image: url("../images/nattu sarkarai 3.jpg");
+}
+.product-4 > div > div {
+    background-image: url("../images/brown sugar 4.jpg");
+}
+.products span {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: calc((60px - 29px)/2);
+    padding-bottom: 2em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    font-family: 'Playball';
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.products span l {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+}
+
+/*product-modal*/
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0em;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+}
+.modal-content {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding: 20px 70px 70px;
+    border: 1px solid #888;
+    background-color: #F6F7F8;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.modal_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.modal_close:hover, .modal_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content h3 {
+    margin: 1em;
+    color: #CC2B16;
+}
+.modal-content hr {
+    background-color: white;
+    margin: auto;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.modal-content > p {
+    width: 90%;
+    font-size: 1.1em !important;
+}
+.modal-content p l {
+    text-align: left;
+    font-size: 1em;
+}
+.modal-content l {
+    color: red;
+}
+.modal-content li {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.img-container {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(233, 157, 182);
+}
+.slide-container {
+    width: 1500px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: left .3s;
+}
+.slide-container .img {
+    width: 500px;
+    height: 300px;
+    padding: 1em;
+    position: relative;
+    margin: auto;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-container .img-1 {
+    background-image: url("../images/theme 10.jpg");
+    background-position: center;
+}
+.slide-container .img-2 {
+    background-image: url("../images/jaggery 4.jpg");
+    background-position: center;
+}
+.slide-container .img-3 {
+    background-image: url("../images/jaggery 3.jpg");
+    background-position: center;
+}
+
+.slide-container .img-4 {
+    background-image: url("../images/jaggery.jpg");
+}
+.slide-container .img-5 {
+    background-image: url("../images/theme 13.jpg");
+    background-position: center;
+}
+.slide-container .img-6 {
+    background-image: url("../images/theme 8.jpg");
+}
+
+.slide-container .img-7 {
+    background-image: url("../images/nattu sarkarai.jpg");
+    background-position: center;
+}
+.slide-container .img-8 {
+    background-image: url("../images/nattu sarkarai 2.jpg");
+    background-position: right;
+}
+.slide-container .img-9 {
+    background-image: url("../images/nattu sarkarai 1.jpg");
+}
+
+.slide-container .img-10 {
+    background-image: url("../images/brown sugar.jpg");
+    background-position: center;
+}
+.slide-container .img-11 {
+    background-image: url("../images/sugarcane 4.jpg");
+}
+.slide-container .img-12 {
+    background-image: url("../images/brown sugar 2.jpg");
+    background-position: top;
+}
+
+.slide-container .img a {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45%;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F7F8;
+    transition: .5s;
+    box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5);
+}
+.slide-container .img a.left-arrow {
+    left: 10px;
+}
+.slide-container .img a.right-arrow {
+    right: 10px;
+}
+.slide-container .img a:hover {
+    box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5);
+    transform: rotate(0deg) skew(0deg) translate(0, -8px);
+}
+#slider-1:target ~ .slide-container {
+    left: 0px;
+}
+#slider-2:target ~ .slide-container {
+    left: -500px;
+}
+#slider-3:target ~ .slide-container {
+    left: -1000px;
+}
+
+#slider-4:target ~ .slide-container {
+    left: 0px;
+}
+#slider-5:target ~ .slide-container {
+    left: -500px;
+}
+#slider-6:target ~ .slide-container {
+    left: -1000px;
+}
+
+#slider-7:target ~ .slide-container {
+    left: 0px;
+}
+#slider-8:target ~ .slide-container {
+    left: -500px;
+}
+#slider-9:target ~ .slide-container {
+    left: -1000px;
+}
+
+#slider-10:target ~ .slide-container {
+    left: 0px;
+}
+#slider-11:target ~ .slide-container {
+    left: -500px;
+}
+#slider-12:target ~ .slide-container {
+    left: -1000px;
+}
+
+.graph {
+    width: 100%;
+    margin: 0em auto 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.graph-h3 {
+    margin: 4em auto 0 !important;
+    color: black !important;
+    font-size: 1.1em;
+}
+.strategy {
+    width: 100%;
+    height: 500px;
+    padding: 10px 150px 0;
+    overflow-x: hidden;
+}
+.strategy > div {
+    padding: 35px;
+    height: 17em;
+}
+.strategy > div > div {
+    width: 100%;
+    height: 100%;
+    background-color: #F68181;
+    transition: .5s;
+    padding: 2em;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.strategy > div > div:hover {
+    cursor: pointer;
+    background-color: #CC2B16;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.45);
+    transform: rotate(0deg) skew(0deg) scale(1.1);
+}
+.strategy img {
+    width: 3em;
+    margin-top: 1.7em;
+}
+.strategy p {
+    font-size: 1.2em;
+    transition: .5s;
+}
+.strategy > div > div:hover p {
+    color: white;
+}
+
+
+/*Small screen*/
+@media (max-width: 576px) {
+    .jumbotron h1 {
+        font-size: 1.6em;
+        margin-left: .6em;
+    }
+    .intro {
+        height: 610px;
+        padding: 3.5em 2em 0;
+    }
+    .intro p {
+        width: 90%;
+        font-size: 1em;
+    }
+    .statics {
+        height: 850px;
+    }
+    .statics > div {
+        margin-bottom: 2.5em;
+    }
+    .statics .circle {
+        width: 110px;
+        height: 110px;
+        font-size: 20px !important;
+    }
+    .statics .circle span {
+        font-size: 1.1em !important;
+    }
+    .statics > div > span {
+        font-size: 1.4em;
+    }
+    .products {
+        height: 1200px;
+        padding: 0 1em;
+    }
+    .products > div {
+        height: 270px;
+        padding: 30px;
+    }
+    .products span l {
+        bottom: 10px;
+        right: 10px;
+        font-size: 12px;
+    }
+    .modal h2 {
+      font-size: 1.3em !important;  
+    }
+    .modal-content {
+        width: 90%;
+        padding: 10px 20px 20px;;
+    }
+    .modal-content > p {
+        font-size: 1em !important;
+    }
+    .modal_close {
+        font-size: 22px;
+    }
+    .img-container {
+        width: 230px;
+        height: 200px;
+    }
+    .slide-container {
+        width: 690px;
+        height: 200px;
+    }
+    .slide-container .img {
+        width: 230px;
+        height: 200px;
+    }
+    .slide-container .img a.left-arrow {
+        left: 8px;
+    }
+    .slide-container .img a.right-arrow {
+        right: 8px;
+    }
+    .slide-container .img a {
+        width: 27px;
+        height: 27px;
+    }
+    #slider-1:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-2:target ~ .slide-container {
+        left: -230px;
+    }
+    #slider-3:target ~ .slide-container {
+        left: -460px;
+    }
+    
+    #slider-4:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-5:target ~ .slide-container {
+        left: -230px;
+    }
+    #slider-6:target ~ .slide-container {
+        left: -460px;
+    }
+    
+    #slider-7:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-8:target ~ .slide-container {
+        left: -230px;
+    }
+    #slider-9:target ~ .slide-container {
+        left: -460px;
+    }
+    
+    #slider-10:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-11:target ~ .slide-container {
+        left: -230px;
+    }
+    #slider-12:target ~ .slide-container {
+        left: -460px;
+    }
+    .strategy {
+        height: 950px;
+        padding: 10px 30px 10px;
+    }
+    .strategy > div {
+        padding: 25px;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 577px) and (max-width: 767px) {
+    .intro {
+        height: 450px;
+    }
+    .intro p {
+        width: 80%;
+    }
+    .statics {
+        height: 930px;
+    }
+    .statics > div {
+        margin-bottom: 2.5em;
+    }
+    .statics .circle {
+        width: 110px;
+        height: 110px;
+    }
+    .statics .circle span {
+        font-size: 1.05em !important;
+    }
+    .statics > div > span {
+        font-size: 1.4em;
+    }
+    .products {
+        height: 1500px;
+        padding: 0 5em;
+    }
+    .products > div {
+        height: 350px;
+        padding: 40px;
+    }
+    .modal-content {
+        width: 80%;
+        padding: 10px 30px 30px;;
+    }
+    .img-container {
+        width: 380px;
+        height: 250px;
+    }
+    .slide-container {
+        width: 1200px;
+        height: 250px;
+    }
+    .slide-container .img {
+        width: 380px;
+        height: 250px;
+    }
+    .slide-container .img a.left-arrow {
+        left: 9px;
+    }
+    .slide-container .img a.right-arrow {
+        right: 9px;
+    }
+    .slide-container .img a {
+        width: 30px;
+        height: 30px;
+    }
+    #slider-1:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-2:target ~ .slide-container {
+        left: -380px;
+    }
+    #slider-3:target ~ .slide-container {
+        left: -760px;
+    }
+    
+    #slider-4:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-5:target ~ .slide-container {
+        left: -380px;
+    }
+    #slider-6:target ~ .slide-container {
+        left: -760px;
+    }
+    
+    #slider-7:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-8:target ~ .slide-container {
+        left: -380px;
+    }
+    #slider-9:target ~ .slide-container {
+        left: -760px;
+    }
+    
+    #slider-10:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-11:target ~ .slide-container {
+        left: -380px;
+    }
+    #slider-12:target ~ .slide-container {
+        left: -760px;
+    }
+    .strategy {
+        height: 920px;
+        padding: 80px 150px 10px;
+    }
+    .strategy > div {
+        padding: 25px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .intro {
+        height: 480px;
+    }
+    .intro p {
+        width: 87%;
+    }
+    .statics {
+        height: 460px;
+    }
+    .statics .circle {
+        width: 110px;
+        height: 110px;
+        font-size: 1.5em;
+    }
+    .statics > div > span {
+        height: 60px;
+        text-align: center;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+    .products {
+        height: 800px;
+        padding: 0 2em;
+    }
+    .products > div {
+        height: 350px;
+        padding: 30px;
+    }
+    .modal-content {
+        width: 80%;
+        padding: 20px 50px 50px;
+    }
+    .img-container {
+        width: 450px;
+        height: 280px;
+    }
+    .slide-container {
+        width: 1350px;
+        height: 280px;
+    }
+    .slide-container .img {
+        width: 450px;
+        height: 280px;
+    }
+    #slider-1:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-2:target ~ .slide-container {
+        left: -450px;
+    }
+    #slider-3:target ~ .slide-container {
+        left: -900px;
+    }
+    
+    #slider-4:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-5:target ~ .slide-container {
+        left: -450px;
+    }
+    #slider-6:target ~ .slide-container {
+        left: -900px;
+    }
+    
+    #slider-7:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-8:target ~ .slide-container {
+        left: -450px;
+    }
+    #slider-9:target ~ .slide-container {
+        left: -900px;
+    }
+    
+    #slider-10:target ~ .slide-container {
+        left: 0px;
+    }
+    #slider-11:target ~ .slide-container {
+        left: -450px;
+    }
+    #slider-12:target ~ .slide-container {
+        left: -900px;
+    }
+    .strategy {
+        height: 500px;
+        padding: 30px 20px 10px;
+    }
+    .strategy > div {
+        padding: 25px;
+        height: 15em;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+}
